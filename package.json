@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "kill": "kill-port --port 4444,4445,4446",
+    "dev": "yarn kill && lerna run dev --parallel --stream",
+    "start": "lerna run start",
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "kill-port": "^1.6.1",
+    "lerna": "^4.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {}
+}
