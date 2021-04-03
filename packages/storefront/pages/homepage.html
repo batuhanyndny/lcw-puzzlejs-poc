@@ -1,0 +1,24 @@
+<script>
+    module.exports = {
+      onCreate(){
+        this.visitCount = 0;
+      },
+      onRequest(req){
+        this.visitCount++;
+      }
+    }
+</script>
+
+<template>
+    <html>
+        <head>
+            <title>LCW Puzzle-js Demo</title>
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        </head>
+        <body>
+            <fragment from="platform-gw" name="header"></fragment>
+            <fragment from="product-gw" name="landing-page"></fragment>
+            <fragment from="platform-gw" name="footer" ></fragment>
+        </body>
+    </html>
+</template>

@@ -1,0 +1,22 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "storefront",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "author": "batuhan yenidunya (batuhanyndny@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@puzzle-js/core": "^3.43.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "watch": ["server.js", "pages/"],
+    "ext": "js, css, html"
+  }
+}

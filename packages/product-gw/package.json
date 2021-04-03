@@ -1,0 +1,26 @@
+{
+  "name": "product-gw",
+  "version": "1.0.0",
+  "description": "product gateway",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "author": "batuhan yenidunya (batuhanyndny@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@puzzle-js/core": "^3.43.2",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "server.js",
+      "src/"
+    ],
+    "ext": "js, css, html"
+  }
+}
